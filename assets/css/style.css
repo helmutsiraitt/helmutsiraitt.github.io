@@ -85,6 +85,7 @@ body {
 	 font: 1rem/1.2 'Poppins', arial, sans-serif;
 	 background-color: var(--color-primary);
 	 color: var(--color-black);
+	 overflow-x: hidden;
 }
 /*navigation*/
 nav {
@@ -109,6 +110,10 @@ nav ul{
 	text-transform: capitalize;
 	justify-content: space-between;
 }
+
+nav ul.active {
+	  visibility: visible;
+}
 .ham {
    cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -117,6 +122,8 @@ nav ul{
   -webkit-user-select: none;
   -ms-user-select: none;
    user-select: none;
+	display: none;
+	
 }
 
 .line {

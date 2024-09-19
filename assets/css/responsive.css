@@ -1,0 +1,28 @@
+/* movile device */
+@media only screen and (max-width: 767px) {
+   nav{
+      /* justify-content: center; */
+      align-items: center;
+      position: relative;
+      max-width: 100%;
+      z-index: 4;
+   }   
+  .ham {
+       display: flex;
+     }
+
+   nav ul {
+          visibility: hidden;
+          background-color: yellow;
+          border: 1px solid black; 
+          width: 100%;
+          justify-content: space-evenly;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          height: 100vh;
+          flex-direction: column;
+          z-index: -1;
+          /* transition: 500ms; */
+     }
+}

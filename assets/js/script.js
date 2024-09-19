@@ -5,10 +5,13 @@ const nav = document.getElementsByTagName('nav')[0];
 //            e.target.classList.toggle('active');
 //            e.preventDefault();
 //       }
-
 // });
-
 const svg = nav.getElementsByTagName('svg')[0];
-svg.addEventListener('click', function() {
-    svg.classList.toggle('active');
+const navUl = nav.querySelector('nav ul');
+svg.addEventListener('click', function(e) {
+    e.target.classList.toggle('active');
+    e.target.previousElementSibling.classList.toggle("active");
 });
+
+
+
