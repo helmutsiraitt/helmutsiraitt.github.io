@@ -11,6 +11,9 @@
 	 border: 1px solid black;
 	 height: 40px;
 	 line-height: 40px;
+    display: inline-block;
+    align-items: center;
+   justify-content: center;
 	 font-size: .7rem;
 	 text-align: center;
 	 text-transform: uppercase;
@@ -236,7 +239,7 @@ section.hero {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    background: linear-gradient(45deg, #f5f5f5, #e8e8e8);
+    background: var(--color-light);
 }
 
 .hero h2{
@@ -270,28 +273,24 @@ section.hero {
 /* about */
 section#about {
 	  height: 100vh;
-    background: linear-gradient(45deg, #f5f5f5, #e8e8e8);
+    background: linear-gradient(-180deg, #f5f5f5, #e8e8e8);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+/*    justify-content: center;*/
     gap: 1rem;
 }
 
 .about h2 {
-/*	 border: 1px solid black;*/
 	 width: 900px;
 	 max-width: 90%;
 	 display: flex;
 	 justify-content: flex-end;
    flex-direction: column;
    align-items: center;
+   margin-top: 2rem;
+
 }
-
-/*.about h2 span{
-	  display: flex;
-
-}*/
 
 .about h2 span:nth-child(1){
 	   font-size: 1.2rem;
@@ -301,7 +300,6 @@ section#about {
 }
 
 .content-about {
-/*	 border: 1px solid black;*/
 	 width: 900px;
 	 max-width: 90%;
 	 display: grid;
@@ -310,7 +308,6 @@ section#about {
 }
 
 .content-picture-about {
-/*	  border: 1px solid black;*/
     display: flex;
     justify-content: flex-end;
 }
@@ -319,7 +316,6 @@ section#about {
 	  border-radius: 50%;
 }
 .sidebar-content {
-/*	  border: 1px solid black;*/
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
@@ -328,12 +324,12 @@ section#about {
 }
 
 .sidebar-content p {
-/*	 border: 1px solid green;*/
    width: 60%;
+   font-weight: 300;
 }
 
 .sidebar-content .skill {
-/*	  border: 1px solid green;*/
+
 	  display: flex;
 	  align-items: center;
 	  justify-content: flex-start;
@@ -341,12 +337,104 @@ section#about {
 
 .sidebar-content .skill p{
 	text-transform: capitalize;
-/*	   border: 1px solid black;*/
-	   width: 24%;
+	width: 24%;
 }
 
 .sidebar-content .skill img{
 	  margin-left: 5px;
 }
 
+/* project */
+section.project {
+	  height: auto;
+	  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.project h2 {
+	 width: 900px;
+	 max-width: 90%;
+	 display: flex;
+	 justify-content: flex-end;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2rem;
+}
+
+.project h2 span:nth-child(1){
+	   font-size: 1.2rem;
+	   font-weight: 600;
+	   text-transform: capitalize;
+	   font-family: 'Gooper';
+}
+
+.content-project {
+	 width: 900px;
+	 max-width: 90%;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 2rem;
+}
+
+.portfolio-project {
+	   display: flex;
+	   gap: 1rem;
+}
+
+.portfolio-project-image {
+	  flex: 1;
+	  overflow: hidden;
+/*	  border: 1px solid black;*/
+}
+
+.portfolio-project-image img {
+	 object-fit: fill;
+	 width: 100%;
+	 aspect-ratio: 2 / 1;
+}
+
+.portfolio-project-info {
+	 flex: 1;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+
+.portfolio-project-info h3 {
+	  font-weight: 600;
+}
+
+.portfolio-project-info p{
+	  font-weight: 300;
+}
+
+.portfolio-project-info .tagline {
+	  font-weight: normal;
+	  word-spacing: 2px;
+}
+
+.portfolio-project-cta{
+/*	  border: 1px solid black;*/
+	  height: auto;
+}
+
+.one-layout {
+	  order: 2;
+}
+
+.two-layout {
+	 order: 1;
+}
+
+/* blog */
+section.blog {
+	  height: 100vh;
+	  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

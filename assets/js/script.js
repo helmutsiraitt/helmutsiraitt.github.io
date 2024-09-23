@@ -42,10 +42,14 @@ const smoothScroll = function (targetEl, duration) {
 
     const scrollTo = function () {
         const links = document.querySelectorAll('.nav-link');
+        const navUl = document.querySelector('nav ul');
         links.forEach(each => {
             each.addEventListener('click', function (e) {
                 const currentTarget = this.getAttribute('href');
                 smoothScroll(currentTarget, 1000);
+                navUl.classList.remove('active');
+                document.body.classList.remove('active'); 
+                hamBtn.classList.remove('active'); 
             });
         });
     
