@@ -24,7 +24,7 @@
         justify-content: center;
         width: 100%;
         height: 100vh;
-        top: 50px;
+        top: 40px;
         left: -900px;
         background-color: var(--color-primary);
         z-index: 1;
@@ -49,8 +49,33 @@
        width: 100%;
 
    }
+/* project */
+  .portfolio-project {
+       flex-direction: column;
+}
+ .one-layout {
+      order: 1;
+}
 
+.two-layout {
+     order: 2;
+}
 
+/* blog */
 
+    section.blog {
+      height: auto;
+      margin-top: 5rem;
+    }
+   .content-blog {
+      flex-wrap: wrap;  
+      gap: 1rem;
+  }
+
+  .blog h2 {
+      margin-top: 2rem;  
+  }
+
+  
 
 }
