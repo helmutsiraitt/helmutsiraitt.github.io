@@ -756,8 +756,22 @@ section.contact {
     display: block;
 }
 
-.sosial-media {
+.sosial-media  {
       flex: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+/*      place-items: center;*/
 /*      border: 1px solid black;*/
-
 }
+
+.sosial-media img {
+    margin-top: 20px;
+}
+
+.footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
