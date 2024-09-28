@@ -185,7 +185,7 @@ nav ul {
 .nav-link:focus:before,
 .nav-link:hover:after,
 .nav-link:focus:after,
-.nav-link:hover .hover-link:before,
+.nav-link:hover .hover-link:before ,
 .nav-link:focus .hover-link:before,
 .nav-link:hover .hover-link:after,
 .nav-link:focus .hover-link:after {
@@ -203,6 +203,12 @@ nav ul {
 .hover-link:after {
     background-color: var(--color-black);
 }
+
+.nav-link.active {
+      color: lightblue;
+}
+
+
 
 nav ul.active {
     left: 0;
