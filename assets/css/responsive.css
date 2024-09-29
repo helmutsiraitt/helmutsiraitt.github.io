@@ -33,6 +33,12 @@
     }
 
     /* hero */
+    section.hero {
+        background-size: cover;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
     .hero p {
         width: 30ch;
     }
@@ -50,12 +56,13 @@
         width: 100%;
 
     }
-   
+
     /* project */
 
-     section.project {
-          margin-top: 5rem;
-     }
+    section.project {
+        margin-top: 5rem;
+    }
+
     .portfolio-project {
         flex-direction: column;
     }
@@ -69,7 +76,6 @@
     }
 
     /* blog */
-
     section.blog {
         height: auto;
         margin-top: 5rem;
@@ -84,6 +90,30 @@
         margin-top: 2rem;
     }
 
+    /* gallery */
+    section.gallery {
+        height: auto;
+        margin-top: 5rem;
+    }
 
+    .gallery h2 {
+        margin-top: 3rem;
+    }
 
+    /*  contact  */
+    section.contact {
+        margin-top: 5rem;
+    }
+
+    .contact {
+        justify-content: flex-start;
+    }
+
+    .contact-list {
+        flex-direction: column-reverse;
+    }
+
+    section.contact h2 {
+        margin-top: 3rem;
+    }
 }
