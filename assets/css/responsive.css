@@ -94,6 +94,7 @@
     section.gallery {
         height: auto;
         margin-top: 5rem;
+/*        border: 1px solid black;*/
     }
 
     .gallery h2 {
@@ -103,6 +104,8 @@
     /*  contact  */
     section.contact {
         margin-top: 5rem;
+/*        border: 1px solid black;*/
+/*         height: auto;*/
     }
 
     .contact {
@@ -110,7 +113,7 @@
     }
 
     .contact-list {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     section.contact h2 {
