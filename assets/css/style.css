@@ -794,12 +794,11 @@ section.contact h2 {
 .tooltip-hover {
       position: absolute;
        bottom: 90%;
-       visibility: hidden;
-/*      opacity: 0;*/
+      opacity: 0;
       padding: 10px 15px;
       border-radius: 5px;
       font-size: 14px;
-/*      transition: 1s;*/
+      transition: 500ms;
       background-color: lightblue;
 }
 
@@ -815,8 +814,8 @@ section.contact h2 {
 }
 
 .tooltip-text:hover .tooltip-hover {
-/*    opacity: 1;*/
-    visibility: visible;
+    opacity: 1;
+/*    visibility: visible;*/
     transform: translateY(-10px);
 }
 
