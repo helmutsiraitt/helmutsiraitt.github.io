@@ -91,3 +91,12 @@
     font-weight: 200;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('LuckiestGuy-Regular.ttf') format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+

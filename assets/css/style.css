@@ -110,25 +110,35 @@ nav {
     width: 100%;
     box-sizing: border-box;
     margin: auto;
-    padding: .5rem .5rem;
+    padding: .2rem .5rem;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 999;
+/*    border: 1px solid black;*/
 }
 
-nav>a {
-    font-family: 'Gooper';
-    font-weight: bold;
+nav > a {
+    font-family: 'LuckiestGuy';
     text-transform: uppercase;
-    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 nav ul {
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: bolder;
     width: 50%;
     display: flex;
+/*    border: 1px solid black;*/
     text-transform: capitalize;
     justify-content: space-between;
+/*     -webkit-backdrop-filter: blur(5px);*/
+        backdrop-filter: grayscale(100px);
+}
+
+nav ul li a{
+   
 }
 
 .nav-link {
@@ -266,7 +276,8 @@ nav.scrolled {
 
 /* hero */
 section.hero {
-   background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #e8e8e8) ,url('../images/hero/hero.png');
+   background-image:  linear-gradient(180deg, rgba(245, 246, 252, 0.6), #e8e8e8) ,url('../images/hero/hero4.png');
+   backdrop-filter: 100%;
 	background-size: cover;
 	background-position: center;
     height: 100vh;
@@ -275,6 +286,7 @@ section.hero {
     justify-content: center;
     align-items: center;
     gap: .5rem;
+
 }
 
 .hero h2 {
@@ -282,27 +294,35 @@ section.hero {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: .3rem;
+    gap: .3rem; 
 }
 
 .hero h2 span:nth-child(1) {
     margin-right: 10%;
-    font-family: 'Gooper';
-    font-weight: 600;
+      font-family: 'LuckiestGuy';
+/*    font-weight: 600;*/
     font-size: clamp(1rem, 5vw, 2rem);
+
+    color: var(--color-light);
+    text-shadow: -1px -1px 0px var(--color-black),
+    3px 3px 0px var(--color-black),
+    6px 6px 0px #00000055;
 }
 
 .hero h2 span:nth-child(2) {
-    font-family: 'Gooper';
-    font-weight: 600;
+      font-family: 'LuckiestGuy';
     margin-left: 10%;
     font-size: clamp(1rem, 5vw, 2rem);
+     color: var(--color-light);
+     text-shadow: -1px -1px 0px var(--color-black),
+    3px 3px 0px var(--color-black),
+    6px 6px 0px #00000055;
 }
 
 .hero p {
     width: 50ch;
     text-align: center;
-    font-weight: 300;
+/*    font-weight: 300;*/
 }
 
 
@@ -331,7 +351,7 @@ section#about {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-about {
@@ -404,7 +424,7 @@ section.project {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-project {
@@ -489,7 +509,7 @@ section.blog {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-blog {
@@ -642,7 +662,7 @@ section.gallery {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .image-gallery {
@@ -692,7 +712,7 @@ section.contact h2 {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .contact-list {
