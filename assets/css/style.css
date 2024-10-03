@@ -95,7 +95,7 @@
 
 body {
     font: 1rem/1.2 'Poppins', arial, sans-serif;
-    background-color: var(--color-primary);
+    background-color: var(--color-light);
     color: var(--color-black);
     overflow-x: hidden;
 }
@@ -110,25 +110,31 @@ nav {
     width: 100%;
     box-sizing: border-box;
     margin: auto;
-    padding: .5rem .5rem;
+    padding: .2rem .5rem;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 999;
+/*    border: 1px solid black;*/
 }
 
-nav>a {
-    font-family: 'Gooper';
-    font-weight: bold;
+nav > a {
+    font-family: 'LuckiestGuy';
     text-transform: uppercase;
-    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 nav ul {
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: bolder;
     width: 50%;
     display: flex;
+/*    border: 1px solid black;*/
     text-transform: capitalize;
     justify-content: space-between;
+/*     -webkit-backdrop-filter: blur(5px);*/
+        backdrop-filter: grayscale(100px);
 }
 
 .nav-link {
@@ -266,7 +272,8 @@ nav.scrolled {
 
 /* hero */
 section.hero {
-   background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #e8e8e8) ,url('../images/hero/hero.png');
+   background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.1), #e8e8e8) ,url('../images/hero/hero.png');
+   backdrop-filter: 100%;
 	background-size: cover;
 	background-position: center;
     height: 100vh;
@@ -275,6 +282,7 @@ section.hero {
     justify-content: center;
     align-items: center;
     gap: .5rem;
+
 }
 
 .hero h2 {
@@ -282,36 +290,43 @@ section.hero {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: .3rem;
+    gap: .3rem; 
 }
 
 .hero h2 span:nth-child(1) {
     margin-right: 10%;
-    font-family: 'Gooper';
-    font-weight: 600;
+      font-family: 'LuckiestGuy';
+/*    font-weight: 600;*/
     font-size: clamp(1rem, 5vw, 2rem);
+
+    color: var(--color-light);
+    text-shadow: -1px -1px 0px var(--color-black),
+    3px 3px 0px var(--color-black),
+    6px 6px 0px #00000055;
 }
 
 .hero h2 span:nth-child(2) {
-    font-family: 'Gooper';
-    font-weight: 600;
+      font-family: 'LuckiestGuy';
     margin-left: 10%;
     font-size: clamp(1rem, 5vw, 2rem);
+     color: var(--color-light);
+     text-shadow: -1px -1px 0px var(--color-black),
+    3px 3px 0px var(--color-black),
+    6px 6px 0px #00000055;
 }
 
 .hero p {
     width: 50ch;
     text-align: center;
-    font-weight: 300;
 }
 
 
 /* about */
 section#about {
     height: 100vh;
-    background: linear-gradient(-180deg, #f5f5f5, #e8e8e8);
+    background: linear-gradient(to top, rgba(245, 246, 252, 0.6), #e8e8e8);
 	  height: 100vh;
-    background: #e8e8e8;
+/*    background: darkgrey;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,7 +346,7 @@ section#about {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-about {
@@ -345,10 +360,15 @@ section#about {
 .content-picture-about {
     display: flex;
     justify-content: flex-end;
+   
 }
 
-.content-picture-about img {
-    border-radius: 50%;
+.cover-image {
+    border: 1px solid black;
+    border-width: 3px 4px 3px 5px;
+    border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+    overflow: hidden;
 }
 
 .sidebar-content {
@@ -361,7 +381,7 @@ section#about {
 
 .sidebar-content p {
     width: 60%;
-    font-weight: 300;
+/*    font-weight: 300;*/
 }
 
 .sidebar-content .skill {
@@ -388,6 +408,7 @@ section.project {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), #f5f5f5);
 }
 
 .project h2 {
@@ -404,7 +425,7 @@ section.project {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-project {
@@ -473,6 +494,7 @@ section.blog {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    background-color: var(--color-light);
 }
 
 .blog h2 {
@@ -489,7 +511,7 @@ section.blog {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .content-blog {
@@ -628,6 +650,7 @@ section.gallery {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+      background: linear-gradient(to top, rgba(245, 246, 252, 0.5), #f5f5f5);
 }
 
 .gallery h2 {
@@ -642,7 +665,7 @@ section.gallery {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .image-gallery {
@@ -677,6 +700,7 @@ section.gallery {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+     background: linear-gradient(to bottom, rgba(245, 246, 252, 0.5), #f5f5f5);
 }
 
 section.contact h2 {
@@ -692,7 +716,7 @@ section.contact h2 {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: capitalize;
-    font-family: 'Gooper';
+/*    font-family: 'Gooper';*/
 }
 
 .contact-list {
@@ -713,6 +737,8 @@ section.contact h2 {
                           'email email'
                           'message message'; 
 }
+
+
 
 .form-control:focus,
 .form-area:focus {
@@ -772,20 +798,17 @@ section.contact h2 {
 }
 
 .sosial-media  {
-/*      border: 1px solid black;*/
       flex: 1;
       display: flex; 
-/*      gap: 10px;*/
-      justify-content: space-evenly;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
 }
 
 
 .tooltip-text {
-/*     border: 1px solid black;*/
      position: relative;
      height: 0;
-/*     display: inline-block;*/
      display: flex;
      align-items: flex-start;
      justify-content: center;
@@ -821,10 +844,11 @@ section.contact h2 {
 
 /* footer */
 .footer {
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
-    background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #e8e8e8);
-    margin-top: 20px;
+/*    background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #e8e8e8);*/
+/*    margin-top: 20px;*/
+    align-items: center;
 }
 
