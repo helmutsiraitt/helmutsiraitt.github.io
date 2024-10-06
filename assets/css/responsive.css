@@ -4,6 +4,40 @@
     --color-black: #0f0f1b;
 }
 
+/* Dekstop devices (portrait and landscape) */
+@media only screen and (min-width: 1440px){
+    
+}
+
+/* Laptop devices (portrait and landscape) */
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+     
+
+}
+
+
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+nav {
+    display: none;
+}
+section.hero,
+section.about,
+section.portfolio,
+section.blog,
+section.gallery,
+section.contact{
+      height: 50vh;
+}
+
+/*  button   */
+.btn {
+    width: 100px;
+}
+     
+
+}
+
 /* movile device */
 @media only screen and (max-width: 767px) {
 
@@ -59,21 +93,12 @@
     }
 
     /* project */
-
     section.project {
         margin-top: 5rem;
     }
 
-    .portfolio-project {
+    .content-project {
         flex-direction: column;
-    }
-
-    .one-layout {
-        order: 1;
-    }
-
-    .two-layout {
-        order: 2;
     }
 
     /* blog */
@@ -95,7 +120,7 @@
     section.gallery {
         height: auto;
         margin-top: 5rem;
-/*        border: 1px solid black;*/
+        /*        border: 1px solid black;*/
     }
 
     .gallery h2 {
@@ -105,8 +130,6 @@
     /*  contact  */
     section.contact {
         margin-top: 5rem;
-/*        border: 1px solid black;*/
-/*         height: auto;*/
     }
 
     .contact {
@@ -120,4 +143,5 @@
     section.contact h2 {
         margin-top: 3rem;
     }
+
 }
