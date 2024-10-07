@@ -17,4 +17,7 @@ Credits :
    Front end parts:
    https://codepen.io/
 
+   image about:
+   https://www.krea.ai/
+
 
